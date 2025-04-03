@@ -1,0 +1,13 @@
+.back {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url('/img/istockphoto-1094956738-612x612.webp');
+
+    height: 70vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+   
+    color: white;
+}

@@ -1,0 +1,10 @@
+.back {
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(/img/alex-612x612.jpg);
+    height: 70vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}

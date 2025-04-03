@@ -1,0 +1,262 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F5EFE6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav{
+    background-color: rgb(247, 243, 237,0.75);
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      transition: top 0.5s ease-in-out;
+      z-index: 99999999999;
+      height: 100px;
+    
+    }
+.head {
+    text-align: center;
+    margin-top: 90px;
+}
+
+h1 {
+    color: #423824;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.stage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin: 45px auto;
+    width: 20%;
+    position: relative; 
+}
+
+.stage .p2, .stage .p1 {
+    position: relative; 
+}
+
+.stage .p2::after, .stage .p1::after {
+    content: "";
+    width: 130px;
+    background-color: #a59b8a;
+    height: 1.2px;
+    position: absolute; 
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);margin: 10px;
+}
+
+
+.stage .p1::after {
+    background-color: rgb(212, 175, 55);
+}
+.stage .p2::after {
+    background-color: rgb(212, 175, 55);
+}
+
+.stage span {
+    font-size: 20px;
+    border-radius: 50%;
+    padding: 2px 10px;
+}
+
+.stage .p2 span {
+    color: #D4AF37;
+    border: #D4AF37 2px solid;
+}
+.stage .p1 span {
+    color: #D4AF37;
+    border: #D4AF37 2px solid;
+}
+.stage .p3 span {
+    color: #D4AF37;
+    border: #D4AF37 2px solid;
+}
+
+.stage .p2 {
+    color: #D4AF37;
+    font-size: 17px;
+}
+.stage .p1 {
+    color: #D4AF37;
+    font-size: 17px;
+}
+.stage .p3 {
+    color: #D4AF37;
+    font-size: 17px;
+}
+
+
+.stage .p3 {
+    margin-bottom: 17px;
+    margin-left:60px ;
+}
+.stage .p2 {
+   
+    margin-left:60px ;
+}
+/* end  */
+ul li{
+    list-style: none;
+}
+ .final{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+ }
+ .table{
+    background-color: #FAF8F4;
+    padding: 30px;
+     border-radius: 12px;
+     border: #E2D7C8 1px solid;
+     width: 40%;
+ }
+
+ .table h2{
+    color: #423824;
+    font-size: 30px;
+ }
+ .table p{
+    color: #8A8375;
+    margin: 10px 0;
+ }
+ h5{
+    color:#423824;
+    font-size: 19px;
+    font-weight: 500;
+    margin: 15px 0;
+ }
+  
+ input{
+    width: 100%;
+    height: 60px;
+    background-color:#F7F3ED;
+    border-radius: 10px;
+    padding: 20px;
+    border-color: #DBCFBD;
+    border: #DBCFBD 1px solid;
+ }
+
+ ::placeholder{
+    color: #afa28f;
+    font-size: 16px;
+ }
+ .ull{
+    display: flex;
+    gap: 50px;
+    margin-bottom: 30px;
+ }
+ .ulll{
+    display: flex;
+    justify-content: space-between;
+ }
+ .lii{
+    border-radius: 8px;
+    color: #423824;
+    border: #DBCFBD 1px solid;
+    padding: 15px 30px;
+    background-color: #F7F3ED;
+      text-decoration: none;
+    font-size: 18px;
+     font-weight: 600;
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ .liii{
+    border-radius: 8px;
+    color: white;
+    border: #DBCFBD 1px solid;
+    padding: 15px 30px;
+    background-color: #5d4f2f;
+      text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+  li{
+margin: 10px 0 20px 0px;
+ }
+ /* تصميم نافذة الشكر */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    width: 360px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.popup-content i {
+    font-size: 50px;
+    color: #27ae60; 
+    margin-bottom: 10px;
+}
+
+.popup-content h2 {
+    color: #423824;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.popup-content p {
+    font-size: 16px;
+    color: #7a7a7a;
+    margin-bottom: 20px;
+}
+
+.popup-content button {
+    background: #423824;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.popup-content button:hover {
+    background: #2c241d;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
