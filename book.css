@@ -392,7 +392,22 @@ ul li::marker {
       padding: 10px 20px;
       border-radius: 5px;
     }
-  
+
+    
+    .stage .p2::after, .stage .p1::after {
+        content: "";
+        width: 50px;
+        background-color: #a59b8a;
+        height: 1.2px;
+        position: absolute; 
+        top: 50%;
+        left: 100%;
+        transform: translateY(-50%);margin: 10px;
+    }
+
+    .container{
+        width: 100%;
+    }
 
 
   }
