@@ -469,11 +469,30 @@ margin: 10px 0 20px 0px;
       padding: 10px 20px;
       border-radius: 5px;
     }
-  
+}
+  @media (max-width: 768px) {
+ 
+    .stage {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin: 45px auto;
+        width: 10%;
+        position: relative; 
+    }
 
-
-  }
-  
+    .final{
+        display: inline-block;
+     }
+     .table{
+         width: 100%;
+     }
+     .stage .p2::after, .stage .p1::after {
+        width: 50px;
+    }
+    
+}
 
 
 
