@@ -2,245 +2,169 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book page</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="book2.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book page</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="book2.css" />
+  <link rel="stylesheet" href="media.css" />
 </head>
 
 <body>
-    <!-- nav  -->
-    <div class="home">
-        <div class="nav">
-            <div class="navimg">
-                <img src="./img/لقطة شاشة 2025-03-30 045658.png" loading="lazy"  alt="logo img">
-                <h3><span>Egypt</span> Travel</h3>
-            </div>
-            <div class="navlist">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html">Destinations</a></li>
-                   
-                    <li><a href="index.html">Feedback</a></li>
-                    <li><a href="contactus.html">contact us</a></li>
-                    <li><a style="color: white;" class="book" href="book.html">Book Now</a></li>
-                </ul>
-            </div>
-        </div>
-        <script src="script.js"></script>
-        <!-- end  -->
-        <div class="pageone">
-            <div class="head1">
-                <h1>Book Your Egyptian Adventure</h1>
-                <div class="stage">
-                    <p class="p1"><span>1</span> Seclet Pacage</p>
-                    <p class="p2"><span>2</span> Your Details </p>
-                    <p class="p3"><span>3</span> Payment</p>
-                </div>
-            </div>
-        </div>
+  <div class="home">
+    <div class="nav">
+      <div class="navimg">
+        <img src="/img/لقطة شاشة 2025-03-30 045658.png" alt="logo img" />
+        <h3><span>Egypt</span> Travel</h3>
+      </div>
+      <div class="navlist">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">Destinations</a></li>
+          <li><a href="index.html">Feedback</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+          <li><a style="color: white;" class="book" href="book.html">Book Now</a></li>
+        </ul>
+      </div>
     </div>
 
-    <div class="book2">
-        <div class="containe">
-            <div class="leftb">
-                <h2>Booking Details</h2>
-                <p>Fill in your information to continue</p>
-                <ul class="ul1">
-                    <li>
-                        <p>Full Name*</p>
-                        <input type="text" placeholder="Your full name" required>
-                    </li>
-                    <li>
-                        <p>Email*</p>
-                        <input type="email" placeholder="Your Email Address" required>
-                    </li>
-                </ul>
-                <ul class="ul2">
-                    <li>
-                        <p>Phone number*</p>
-                        <input type="text" placeholder="Your contact number" required>
-                    </li>
-                    <li>
-                        <p>Number of Travelers*</p>
-                        <input id="numTravelers" type="number" min="1" value="2" onchange="updateBookingSummary()" required>
-                    </li>
-                </ul>
-                <p>Preferred Travel Date *</p>
-                <input required type="date">
-                <p>Special Requests or Notes</p>
-                <input type="text" placeholder="Any special requirement or questions? ">
-                <div class="but">
-                    <button><a href="book.html">back</a></button>
-
-                    <button style="background-color:#423824;"><a style="color: aliceblue;" href="book6.html">continue to
-                            payment</a></button>
-                </div>
-            </div>
-            <div class="rightb">
-                <h3>Booking Summary</h3>
-                <div class="head">
-                    <div class="rightbimg">
-                        <img src="./img/photo-1572252009286-268acec5ca0a.avif" loading="lazy"  alt="">
-                    </div>
-                    <div class="rightbicon">
-                        <h5>Cairo Explorer </h5>
-                        <i class="fa-solid fa-calendar-days" style="color: #d4af37;"></i>
-                        <span class="salery">3day</span>
-                    </div>
-                </div>
-                <hr>
-          <!-- في الـ booking summary -->
-<div class="uls">
-    <ul>
-        <li>Package Price:</li>
-        <li id="packagePrice">$599 per person</li>
-    </ul>
-    <ul>
-        <li>Travelers:</li>
-        <li id="travelersCount">2</li>
-    </ul>
-    <ul>
-        <li>Booking Fee:</li>
-        <li id="bookingFee">29</li>
-    </ul>
-</div>
-<hr>
-<h5 style="color: #423824; font-size: 20px;">Promo Code</h5>
-<input id="promoCode" style="height: 40px; margin: 20px;" type="text" placeholder="Enter code">
-<button onclick="applyDiscount()" style="background-color: #423824; border-radius: 10px; padding: 8px; color: white; font-size: 15px; border: none; cursor: pointer;">
-    Apply
-</button>
-
-<div class="total">
-    <ul><li>Total:</li></ul>
-    <ul><li id="totalPrice">$499</li></ul>
-</div>
-
-
-            </div>
+    <div class="pageone">
+      <div class="head1">
+        <h1>Book Your Egyptian Adventure</h1>
+        <div class="stage">
+          <p class="p1"><span>1</span> Select Package</p>
+          <p class="p2"><span>2</span> Your Details</p>
+          <p class="p3"><span>3</span> Payment</p>
         </div>
+      </div>
     </div>
-    </div>
-    <div class="footer">
-        <div class="container">
-            <div class="box">
-                <h3>Egypt Travel</h3>
-                <ul class="social">
-                    <li>
-                        <a href="#" class="facebook">
-                            <img loading="lazy"  class="faceboo"
-                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOdJREFUSEvt1CFOQ0EQxvFfBSHoguEIxSEqMBgOQELKDUpAYlA1FXgcTbB1xRBsBQJLD1ASJCS0VyCBl4xompLNvryXVHTVZHfn+8/O7ExDzatRs761AxzgFm3s4hND9P7LRM4L9vGB7SWxR3SqANzjcoXQCOdVAN5wGEIvOMFP6pPkpOgbeyF4hUFKvDjPAczRDNELPFQBKHLbCqEb7IT9jEnYrxiXrUHxQ84SkV7jrk7AKZ7KAvo4DuejvybbCnuKr7C7eC8LWPSbRfcWe5UVeQPIarRNDZKTpfYUJSNYdSFnmq4n4BdfByoZ/9M5/QAAAABJRU5ErkJggg==" />
+  </div>
 
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="twitter">
-                            <img loading="lazy"  class="twitte"
-                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAZtJREFUSEvd1b1rFVEQBfBfNKAQsYqFoBiFIEIUESstlYAhYJQQIoJFLETsFUXxD9DGQrERCdjYWAiBFDYS0gQFxRSpEhIQBbESwS9I7sA+WNbdzb4Hr8nt9s6dc+6cO3O2R5dXT5fxbT2CPvzcRLbduI9RHMRfPMYd7MX57Hs9cPISbcciJvCphuQNzpTE17Afl/CyFc8TDGAF33AB8yUgJ/C+hvwd3uIFPhQr2Ikf6M0AnuEevuQAL2fJVRwh740k3XRZBbEXtz5VyJ7DayzgOB7VVPAcU/l4XqJdOIxZ9Hc4Hw9ws4pgH1bxPXXBng4JQp4nVQTbsIwDHYJH2hEsVRHE/sWsxVoP3Q5XdOChYkKZVcQc3MXRdtBxHU+bEIxgpk3wGLLBNM1/mhDEmejjKw1J/uF01sb/pVS5aTz4EG6nR5usIQq/uZoaI/q/dJURhOGdxC2cqwH/hZjsV3WV5gnO4mFKOFYwwbL8GMZraWpD+9pVrCCseDwZ1RiGsSPJ9Btf8RnhpHHjj5sBt+Jb74/WtPLG57ou0QbqWz0ZBzSqswAAAABJRU5ErkJggg==" />
+  <div class="book2">
+    <div class="containe">
+      <form id="bookingForm" class="leftb">
+        <h2>Booking Details</h2>
+        <p>Fill in your information to continue</p>
+        <ul class="ul1">
+          <li>
+            <p>Full Name*</p>
+            <input type="text" placeholder="Your full name" required />
+          </li>
+          <li>
+            <p>Email*</p>
+            <input type="email" placeholder="Your Email Address" required />
+          </li>
+        </ul>
+        <ul class="ul2">
+          <li>
+            <p>Phone number*</p>
+            <input type="text" placeholder="Your contact number" required />
+          </li>
+          <li>
+            <p>Number of Travelers*</p>
+            <input id="numTravelers" type="number" min="1" value="2" required onchange="updateBookingSummary()" />
+          </li>
+        </ul>
+        <p>Preferred Travel Date *</p>
+        <input type="date" required />
+        <p>Special Requests or Notes</p>
+        <input type="text" placeholder="Any special requirement or questions?" />
 
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="youtube">
-                            <img class=""
-                              loading="lazy"   src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAVdJREFUSEvt1T1LHUEUxvHfVQvFF0QFEZQUCpIiRWws06URLPwCFoKF+iVEWxvBKiB+Bb9CuhhQtDGmsBBJoYKIFgHxZQd2YR3u3bmQ3EK40+3OOc//zHnO7Na0eNVarK8NSHY4btEYNjCFcUwmFXjBKa5xhnX8KfLKgGn8RH8TolUhd5jBeQgqA/aw+I/iRfoulmLAIT7/J8ABZmPADYYbAEKf57Cd+5Oq4wIfYsATOhpkPmfmd6ILa/kg9FVQbrNihsqAXjxUJIQTlOEjGWwzm5blyMdC4h4DZUCo7LECEE4XYoqVAvxFT9yiUGWjVQACZCWf9cGK+CuMxoDQotCqeisAFrI7stWkyb/wMQYE5ydS49Hk/nd8iQH7mG9SIBX2LR+ANzf5E34U5qQUEvvhU3EUnyA8h5u8istc4Gv+rruOYPDsJJq+39jBcRHf/uEkrXr/LXoFaFYyGbiLAxQAAAAASUVORK5CYII=" />
-
-                        </a>
-                    </li>
-                </ul>
-                <p class="text">
-                    Discover the wonders of ancient Egypt with our expertly curated tour packages.
-                </p>
-            </div>
-            <div class="box">
-                <ul class="links">
-                    <li><a href="cairo.html">Cairo</a></li>
-                    <li><a href="sinai.html">Sinai</a></li>
-                    <li><a href="Alexandria.html">Alexandria</a></li>
-                    <li><a href="aswan.html">Aswan</a></li>
-                    <li><a href="siwa.html">Siwa</a></li>
-                    <li><a href="Luxor.html">luxor</a></li>
-                </ul>
-            </div>
-            <div class="box">
-                <div class="line">
-                    <i class="fas fa-map-marker-alt fa-fw"></i>
-                    <div class="info">Egypt, Giza, Inside The Sphinx, Room Number 220</div>
-                </div>
-                <div class="line">
-                    <i class="far fa-clock fa-fw"></i>
-                    <div class="info">Business Hours: From 10:00 To 18:00</div>
-                </div>
-                <div class="line">
-                    <i class="fas fa-phone-volume fa-fw"></i>
-                    <div class="info">
-                        <span>+20123456789</span>
-                        <span>+20198765432</span>
-                    </div>
-                </div>
-            </div>
-            <div class="box footer-gallery">
-
-            </div>
+        <div class="but">
+          <button type="button" onclick="window.location.href='book.html'">Back</button>
+          <button type="submit" style="background-color: #423824; color: white;">Continue to Payment</button>
         </div>
-        <p class="copyright">© 2025 Egypt Travel. All rights reserved.</p>
+      </form>
+
+      <div class="rightb">
+        <h3>Booking Summary</h3>
+        <div class="head">
+          <div class="rightbimg">
+            <img src="/img/photo-1572252009286-268acec5ca0a.avif" alt="" />
+          </div>
+          <div class="rightbicon">
+            <h5>Cairo Explorer</h5>
+            <i class="fa-solid fa-calendar-days" style="color: #d4af37;"></i>
+            <span class="salery">3 day</span>
+          </div>
+        </div>
+        <hr />
+        <div class="uls">
+          <ul>
+            <li>Package Price:</li>
+            <li id="packagePrice">$599 per person</li>
+          </ul>
+          <ul>
+            <li>Travelers:</li>
+            <li id="travelersCount">2</li>
+          </ul>
+          <ul>
+            <li>Booking Fee:</li>
+            <li id="bookingFee">$29</li>
+          </ul>
+        </div>
+        <hr />
+        <h5 style="color: #423824; font-size: 20px;">Promo Code</h5>
+        <input id="promoCode" style="height: 40px; margin: 20px; font-size: 20px;" type="text" placeholder="Enter code" />
+        <button onclick="applyDiscount()" style="background-color: #423824; border-radius: 10px; padding: 8px; color: white; font-size: 15px; border: none; cursor: pointer;">Apply</button>
+        <div class="total">
+          <ul><li>Total:</li></ul>
+          <ul><li id="totalPrice">$499</li></ul>
+        </div>
+      </div>
     </div>
-    <!-- End Footer -->
-<!-- في الـ booking summary -->
+  </div>
 
+  <script>
+    function updateBookingSummary() {
+      var numTravelers = document.getElementById('numTravelers').value;
+      var pricePerPerson = 599;
+      var bookingFee = 29;
+      var totalPrice = numTravelers * pricePerPerson;
 
+      document.getElementById('packagePrice').innerText = "$" + pricePerPerson + " per person";
+      document.getElementById('travelersCount').innerText = numTravelers;
+      document.getElementById('bookingFee').innerText = "$" + bookingFee;
+      document.getElementById('totalPrice').innerText = "$" + totalPrice;
+    }
 
+    function applyDiscount() {
+      var promoCode = document.getElementById('promoCode').value.trim().toLowerCase();
+      var totalElement = document.getElementById('totalPrice');
+      var originalTotal = parseFloat(totalElement.innerText.replace("$", ""));
 
-<script>function updateBookingSummary() {
-
-    var numTravelers = document.getElementById('numTravelers').value;
-
-   
-    var pricePerPerson = 599;
-    var bookingFee = 29;
-    var totalPrice = numTravelers * pricePerPerson;
-
-
-    document.getElementById('packagePrice').innerText = "$" + pricePerPerson + " per person";
-    document.getElementById('travelersCount').innerText = numTravelers;
-    document.getElementById('bookingFee').innerText = "$" + bookingFee;
-    document.getElementById('totalPrice').innerText = "$" + totalPrice;
-}
-function applyDiscount() {
-    var promoCode = document.getElementById('promoCode').value.trim().toLowerCase();
-    var totalElement = document.getElementById('totalPrice');
-    var originalTotal = parseFloat(totalElement.innerText.replace("$", ""));
-
-    if (promoCode === "dr bassam") {
-        var discountedTotal = originalTotal * 0; // خصم 100%
+      if (promoCode === "dr bassam" || promoCode === "omaryasser") {
+        var discountedTotal = 0;
         totalElement.innerText = "$" + discountedTotal.toFixed(2);
         alert("Promo code applied! You got a 100% discount.");
-    } else {
+      } else {
         alert("Invalid promo code. Try again.");
+      }
     }
-    if (promoCode === "omaryasser") {
-        var discountedTotal = originalTotal * 0; // خصم 100%
-        totalElement.innerText = "$" + discountedTotal.toFixed(2);
-        alert("Promo code applied! You got a 100% discount.");
-    } else {
-        alert("Invalid promo code. Try again.");
-    }
-}
 
+    document.getElementById('bookingForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var inputs = this.querySelectorAll('input[required]');
+      var allFilled = true;
 
+      inputs.forEach(function (input) {
+        if (!input.value.trim()) {
+          input.style.border = "2px solid red";
+          allFilled = false;
+        } else {
+          input.style.border = "";
+        }
+      });
 
-</script>
+      if (!allFilled) {
+        alert("من فضلك املى كل البيانات المطلوبة.");
+        return;
+      }
 
-
-
-
-
-
-
-
+      window.location.href = "book6.html";
+    });
+  </script>
 </body>
+
+</html>
+
