@@ -62,4 +62,9 @@ document.querySelectorAll(".Destinations-item1").forEach((item) => {
         item.style.transform = "rotateY(0deg) rotateX(0deg)";
     });
 });
+function toggleMenu() {
+    const navList = document.querySelector('.navlist');
+    navList.classList.toggle('active');
+  }
+  
 
