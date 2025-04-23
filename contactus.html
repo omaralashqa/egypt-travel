@@ -11,20 +11,20 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="cairo.css">
     <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="media.css">
 </head>
 
 <body>
     <div class="home">
         <div class="nav">
             <div class="navimg">
-                <img src="./img/لقطة شاشة 2025-03-30 045658.png" loading="lazy"  alt="logo img">
+                <img src="/img/لقطة شاشة 2025-03-30 045658.png" alt="logo img">
                 <h3><span>Egypt</span> Travel</h3>
             </div>
             <div class="navlist">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="index.html">Destinations</a></li>
-                 
                     <li><a href="index.html">Feedback</a></li>
                     <li><a href="contactus.html">Contact us</a></li>
                     <li><a style="color: white;" class="book" href="book.html">Book Now</a></li>
@@ -38,16 +38,14 @@
                 <p>Get in touch to plan your perfect Egyptian adventure</p>
             </div>
         </div>
-
     </div>
 
     <script src="script.js"></script>
+    
     <div class="contact">
         <div class="contactleft">
             <h2>Get In Touch</h2>
-            <p>Whether you're ready to book your dream Egyptian vacation or just have questions about our packages,
-                we're
-                here to help. Fill out the form, and one of our travel specialists will contact you shortly.</p>
+            <p>Whether you're ready to book your dream Egyptian vacation or just have questions about our packages, we're here to help. Fill out the form, and one of our travel specialists will contact you shortly.</p>
             <div class="box1">
                 <div class="line1">
                     <i class="fas fa-map-marker-alt fa-fw"></i>
@@ -64,148 +62,86 @@
                 <div class="line1">
                     <i class="fas fa-phone-volume fa-fw"></i>
                     <div class="info">
-                        <h3>call Us</h3>
+                        <h3>Call Us</h3>
                         <span>+20123456789</span>
                         <span>+20198765432</span>
                     </div>
                 </div>
             </div>
-            <div class="ta">
-
-                <h3>Operating Hours</h3>
-                <table class="hours-table">
-                    <tr>
-                        <td>Monday - Friday:</td>
-                        <td>9:00 AM - 6:00 PM</td>
-                    </tr>
-                    <tr>
-                        <td>Saturday:</td>
-                        <td>10:00 AM - 4:00 PM</td>
-                    </tr>
-                    <tr>
-                        <td>Sunday:</td>
-                        <td>Closed</td>
-                    </tr>
-                </table>
-
-
-
-            </div>
         </div>
+
         <div class="contactright">
             <h3>Send Us a Message</h3>
-            <form >
-
-                <div class="form">
-                    <p><span class="contact-method">First Name</span><br>
-                        <input type="text" placeholder="Your first name">
-
-
-                    <p><span class="contact-method">Second Name</span>
-                        <input type="text" placeholder="Your last name">
-                </div>
-
-
-
-                <p><span class="contact-method">Email</span><br>
-                    <input type="email" placeholder="Your email address">
+            <form id="contactForm">
+                <p>
+                    <span class="contact-method">First Name</span><br>
+                    <input type="text" id="firstName" placeholder="Your first name" required>
                 </p>
-
-                <p><span class="contact-method">Interested Destination</span><br>
-                    <select>
-                        <option>Select a destination</option>
+                
+                <p>
+                    <span class="contact-method">Second Name</span><br>
+                    <input type="text" id="secondName" placeholder="Your last name" required>
+                </p>
+                
+                <p>
+                    <span class="contact-method">Email</span><br>
+                    <input type="email" id="email" placeholder="Your email address" required>
+                </p>
+                
+                <p>
+                    <span class="contact-method">Interested Destination</span><br>
+                    <select id="destination" required>
+                        <option value="">Select a destination</option>
                         <option>Cairo</option>
                         <option>Luxor</option>
                         <option>Aswan</option>
                         <option>Alexandria</option>
-                        <option>siwa</option>
+                        <option>Siwa</option>
                     </select>
                 </p>
-
-                <p><span class="contact-method">Message</span><br>
-                    <textarea placeholder="Tell us about your travel plans and questions"></textarea>
+                
+                <p>
+                    <span class="contact-method">Message</span><br>
+                    <textarea id="message" placeholder="Tell us about your travel plans and questions" ></textarea>
                 </p>
-                <button id="sendButton"> Send  message</button>
-                <div id="messageBox" class="message-box">
+                
+                <button type="submit" id="sendButton">Send message</button>
+                
+                <div id="messageBox" class="message-box" style="display: none;">
                     Thank you! We will contact you as soon as possible.
-                    <button id="okButton" class="ok-button">OK</button>
+                    <button type="button" id="okButton" class="ok-button">OK</button>
                 </div>
             </form>
-           
-    
-         
         </div>
     </div>
-    <!-- Start Footer -->
-    <div class="footer">
-        <div class="container">
-            <div class="box">
-                <h3>Egypt Travel</h3>
-                <ul class="social">
-                    <li>
-                        <a href="#" class="facebook">
-                            <img loading="lazy"  class="faceboo"
-                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOdJREFUSEvt1CFOQ0EQxvFfBSHoguEIxSEqMBgOQELKDUpAYlA1FXgcTbB1xRBsBQJLD1ASJCS0VyCBl4xompLNvryXVHTVZHfn+8/O7ExDzatRs761AxzgFm3s4hND9P7LRM4L9vGB7SWxR3SqANzjcoXQCOdVAN5wGEIvOMFP6pPkpOgbeyF4hUFKvDjPAczRDNELPFQBKHLbCqEb7IT9jEnYrxiXrUHxQ84SkV7jrk7AKZ7KAvo4DuejvybbCnuKr7C7eC8LWPSbRfcWe5UVeQPIarRNDZKTpfYUJSNYdSFnmq4n4BdfByoZ/9M5/QAAAABJRU5ErkJggg==" />
 
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="twitter">
-                            <img  loading="lazy" class="twitte"
-                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAZtJREFUSEvd1b1rFVEQBfBfNKAQsYqFoBiFIEIUESstlYAhYJQQIoJFLETsFUXxD9DGQrERCdjYWAiBFDYS0gQFxRSpEhIQBbESwS9I7sA+WNbdzb4Hr8nt9s6dc+6cO3O2R5dXT5fxbT2CPvzcRLbduI9RHMRfPMYd7MX57Hs9cPISbcciJvCphuQNzpTE17Afl/CyFc8TDGAF33AB8yUgJ/C+hvwd3uIFPhQr2Ikf6M0AnuEevuQAL2fJVRwh740k3XRZBbEXtz5VyJ7DayzgOB7VVPAcU/l4XqJdOIxZ9Hc4Hw9ws4pgH1bxPXXBng4JQp4nVQTbsIwDHYJH2hEsVRHE/sWsxVoP3Q5XdOChYkKZVcQc3MXRdtBxHU+bEIxgpk3wGLLBNM1/mhDEmejjKw1J/uF01sb/pVS5aTz4EG6nR5usIQq/uZoaI/q/dJURhOGdxC2cqwH/hZjsV3WV5gnO4mFKOFYwwbL8GMZraWpD+9pVrCCseDwZ1RiGsSPJ9Btf8RnhpHHjj5sBt+Jb74/WtPLG57ou0QbqWz0ZBzSqswAAAABJRU5ErkJggg==" />
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();  // منع الإرسال التلقائي للنموذج
+            
+            // تحقق من أن جميع الحقول تم تعبئتها
+            var isValid = true;
+            var formElements = this.elements;
+            
+            for (var i = 0; i < formElements.length; i++) {
+                if (formElements[i].hasAttribute("required") && formElements[i].value.trim() === "") {
+                    isValid = false;
+                    break;
+                }
+            }
 
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="youtube">
-                            <img loading="lazy"  class=""
-                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAVdJREFUSEvt1T1LHUEUxvHfVQvFF0QFEZQUCpIiRWws06URLPwCFoKF+iVEWxvBKiB+Bb9CuhhQtDGmsBBJoYKIFgHxZQd2YR3u3bmQ3EK40+3OOc//zHnO7Na0eNVarK8NSHY4btEYNjCFcUwmFXjBKa5xhnX8KfLKgGn8RH8TolUhd5jBeQgqA/aw+I/iRfoulmLAIT7/J8ABZmPADYYbAEKf57Cd+5Oq4wIfYsATOhpkPmfmd6ILa/kg9FVQbrNihsqAXjxUJIQTlOEjGWwzm5blyMdC4h4DZUCo7LECEE4XYoqVAvxFT9yiUGWjVQACZCWf9cGK+CuMxoDQotCqeisAFrI7stWkyb/wMQYE5ydS49Hk/nd8iQH7mG9SIBX2LR+ANzf5E34U5qQUEvvhU3EUnyA8h5u8istc4Gv+rruOYPDsJJq+39jBcRHf/uEkrXr/LXoFaFYyGbiLAxQAAAAASUVORK5CYII=" />
+            // إذا كانت الحقول مكتملة، اعرض الرسالة
+            if (isValid) {
+                document.getElementById("messageBox").style.display = "block";
+            } else {
+                alert("Please fill in all required fields.");
+            }
+        });
 
-                        </a>
-                    </li>
-                </ul>
-                <p class="text">
-                    Discover the wonders of ancient Egypt with our expertly curated tour packages.
-                </p>
-            </div>
-            <div class="box">
-                <ul class="links">
-                    <li><a href="#">Cairo</a></li>
-                    <li><a href="#">Sinai</a></li>
-                    <li><a href="#">Alexandria</a></li>
-                    <li><a href="#">Aswan</a></li>
-                    <li><a href="#">Siwa</a></li>
-                    <li><a href="#">luxor</a></li>
-                </ul>
-            </div>
-            <div class="box">
-                <div class="line">
-                    <i class="fas fa-map-marker-alt fa-fw"></i>
-                    <div class="info">Egypt, Giza, Inside The Sphinx, Room Number 220</div>
-                </div>
-                <div class="line">
-                    <i class="far fa-clock fa-fw"></i>
-                    <div class="info">Business Hours: From 10:00 To 18:00</div>
-                </div>
-                <div class="line">
-                    <i class="fas fa-phone-volume fa-fw"></i>
-                    <div class="info">
-                        <span>+20123456789</span>
-                        <span>+20198765432</span>
-                    </div>
-                </div>
-            </div>
-            <div class="box footer-gallery">
-
-            </div>
-        </div>
-        <p class="copyright">© 2025 Egypt Travel. All rights reserved.</p>
-    </div>
-    <script src="script.js"></script>
-    
-    <!-- End Footer -->
-     <script>document.getElementById("sendButton").addEventListener("click", function(event) {
-        event.preventDefault();  
-        document.getElementById("messageBox").style.display = "block"; 
-    });</script>
+        // إخفاء الرسالة عند الضغط على OK
+        document.getElementById("okButton").addEventListener("click", function() {
+            document.getElementById("messageBox").style.display = "none";
+        });
+    </script>
 </body>
+</html>
