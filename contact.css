@@ -1,5 +1,5 @@
 .back {
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),url(/img/istockphoto-178375366-612x612.jpg);
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),url(./img/istockphoto-178375366-612x612.jpg);
     height: 50vh;
     display: flex;
     justify-content: flex-start;
