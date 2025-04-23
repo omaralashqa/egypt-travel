@@ -38,46 +38,9 @@ mouseElement.addEventListener("click", () => {
     });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    gsap.registerPlugin(ScrollTrigger);
-
-    
-    gsap.from(".Destinations-header", {
-        opacity: 0,  
-        y: -50,  
-        duration: 1.2,  
-        ease: "power3.out" 
-    });
 
   
-    gsap.utils.toArray(".Destinations-item1").forEach((item, index) => {
-        gsap.from(item, {
-            opacity: 0,  
-            y: 100, 
-            scale: 0.9, 
-            duration: 1,  
-            ease: "power3.out",  
-            delay: index * 0.2,  
-            scrollTrigger: {
-                trigger: item,  
-                start: "top 80%",  
-                toggleActions: "play none none reverse"  
-            }
-        });
-    });
-});
-gsap.utils.toArray(".Destinations-item1 img").forEach((img) => {
-    gsap.to(img, {
-        y: -50, 
-        ease: "none",
-        scrollTrigger: {
-            trigger: img,
-            start: "top bottom",
-            end: "bottom top",
-            scrub: true, 
-        },
-    });
-});
+
 document.querySelectorAll(".Destinations-item1").forEach((item) => {
     item.addEventListener("mousemove", (e) => {
         let xAxis = (window.innerWidth / 2 - e.pageX) / 25;
