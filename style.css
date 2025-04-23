@@ -648,7 +648,7 @@ font-size: 40px;
     color: #423824;
     font-size: 20px;
   }
-  
+
 @media (max-width: 768px) {
      .navlist {
         position: absolute;
@@ -698,98 +698,161 @@ font-size: 40px;
 }
 
 @media (max-width: 576px) {
-   
+    /* حاوية الهمبرغر */
+    .menu-container {
+      position: relative;
+      display: flex;
+      justify-content: flex-end;
+      padding: 20px;
+    }
+  
+    /* همبرغر القائمة */
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 30px;
+      height: 25px;
+      cursor: pointer;
+    }
+  
+    /* الخطوط داخل همبرغر القائمة */
+    .linee {
+      height: 4px;
+      width: 100%;
+      background-color: #333;
+      transition: all 0.3s ease;
+    }
+  
+    /* إعدادات قائمة التنقل */
     .navlist {
-        position: fixed;
-        top: 80px;
-        left: -100%;
-        width: 100%;
-        height: calc(100vh - 80px);
-        background-color: rgba(247, 243, 237, 0.95);
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        transition: all 0.5s ease;
+      position: fixed;
+      top: 80px;
+      left: -100%;
+      width: 100%;
+      height: auto;  /* تغيير الارتفاع ليكون تلقائي */
+      max-height: 800px; /* تحديد الحد الأقصى للارتفاع */
+      background-color: rgba(247, 243, 237, 0.95);
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;  /* محاذاة العناصر في الأعلى */
+      transition: all 0.5s ease;
+      display: flex; /* لضمان أن العرض سيكون عموديًا */
     }
-    
+  
+    /* عند تفعيل الكلاس active، تظهر القائمة */
     .navlist.active {
-        left: 0;
+      left: 0;
     }
+  
+    /* إعدادات القائمة الداخلية */
+    .navlist ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+    }
+  
+    .navlist ul li {
+      padding: 15px;
+    }
+  
+    .navlist ul li a {
+      text-decoration: none;
+      color: #333;
+      font-size: 18px;
+    }
+  
+    .navlist ul li a.book {
+      color: white;
+      background-color: #e94560; /* اللون المميز */
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+  
+    /* تأثير النصوص في الصفحة الرئيسية */
     .homecontent h1 {
-        font-size: 28px;
+      font-size: 28px;
     }
-    
+  
     .homecontent p {
-        font-size: 16px;
+      font-size: 16px;
     }
+  
+    /* تنسيق العناوين الصغيرة */
     .Destinations-header h2,
     .whyuscontent h2,
     .feedback h2,
     .sec h3 {
-        font-size: 28px;
+      font-size: 28px;
     }
-    
+  
+    /* تنسيق الفوتر ليظهر بشكل عمودي على الأجهزة الصغيرة */
     .footer .container {
-        grid-template-columns: 1fr;
+      grid-template-columns: 1fr;
     }
-     
-    .Destinations-item1{
-        width: 100%;
+  
+    /* إعدادات عرض الصور والتنسيقات الأخرى */
+    .Destinations-item1 {
+      width: 100%;
     }
-    .whyus .container{
-        width: 100%;
+  
+    .whyus .container,
+    .whyuscontent {
+      width: 100%;
     }
-    .whyuscontent{
-        width: 80%;
+  
+    .left {
+      display: inline-block;
     }
-    
-    .left{
-        display: inline-block;
-      
-    }
+  
     .whyusimg {
-        width: 0px;
+      width: 0;
     }
-    
+  
     .whyusimg img {
-        width: 100%;
+      width: 100%;
     }
-    .flex{
-        display: inline-block;
+  
+    .flex {
+      display: inline-block;
     }
-    
-
-.feedback .container{
-    width: 100%;
-}
-
-.feedbackitems{
-display: inline-block;
-justify-content: space-between;
-padding: 20px;
-}
-.intro{
-    padding: 30px 1px;
-    display: inline-block;
-    justify-content: space-between;
-    width: 89%;
-    margin: auto;
+  
+    /* إعدادات المحتوى في قسم التعليقات */
+    .feedback .container {
+      width: 100%;
+    }
+  
+    .feedbackitems {
+      display: inline-block;
+      justify-content: space-between;
+      padding: 20px;
+    }
+  
+    /* إعدادات صورة مقدمة الصفحة */
+    .intro {
+      padding: 30px 1px;
+      display: inline-block;
+      justify-content: space-between;
+      width: 89%;
+      margin: auto;
+    }
+  
+    .intro p {
+      padding-top: 20px;
+    }
+  
+    .intro img {
+      width: 90%;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      max-width: 1000px;
+      transition: transform 0.3s ease-in-out;
+      position: relative;
+      left: 40px;
+      height: 500px;
+      top: 80px;
+      margin-bottom: 30px;
+    }
   }
-  .intro p{
-    padding-top: 20px;
-  }
-  .intro img{
-    width: 90%;
-    
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    max-width: 1000px;
-    transition: transform 0.3s ease-in-out;
-    position: relative;
-    left: 40px;
-    height: 500px;
-    top: 80px;
-    margin-bottom: 30px;
-  }
-
-}
+  
