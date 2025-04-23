@@ -1,6 +1,6 @@
 .back {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-    url('/img/istockphoto-1222269073-612x612.jpg');
+    url('./img/istockphoto-1222269073-612x612.jpg');
 
     height: 70vh;
     display: flex;
