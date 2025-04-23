@@ -39,8 +39,18 @@ mouseElement.addEventListener("click", () => {
 });
 
 
-  
-
+gsap.utils.toArray(".Destinations-item1 img").forEach((img) => {
+    gsap.to(img, {
+        y: -50, 
+        ease: "none",
+        scrollTrigger: {
+            trigger: img,
+            start: "top bottom",
+            end: "bottom top",
+            scrub: true, 
+        },
+    });
+});
 document.querySelectorAll(".Destinations-item1").forEach((item) => {
     item.addEventListener("mousemove", (e) => {
         let xAxis = (window.innerWidth / 2 - e.pageX) / 25;
