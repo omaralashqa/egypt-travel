@@ -177,3 +177,18 @@ textarea {
 .ok-button:hover {
     background-color: #005f6b;
 }
+@media (max-width: 768px) {
+
+    .contact{
+        display: flex;
+        flex-direction: column;
+    }
+    .contactleft{
+        width: 100%;
+    }
+    .contactright{
+     
+        width: 100%;
+
+    }
+}
