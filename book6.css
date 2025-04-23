@@ -260,3 +260,23 @@ margin: 10px 0 20px 0px;
         transform: scale(1);
     }
 }
+
+@media (max-width: 768px) {
+ 
+    .stage {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 70px;
+        margin: 45px auto;
+        width: 10%;
+        position: relative; 
+    }
+    .final{
+        display: inline-block;
+     }
+     .table{
+         width: 100%;
+     }
+}
+
